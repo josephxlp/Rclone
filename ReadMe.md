@@ -10,3 +10,5 @@ https://kb.uconn.edu/space/IKB/26050527301/Install+OneDrive+on+Linux
 mkdir ~/OneDrive
 - mount remote to local direcory 
 rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive &
+
+rclone rcd --rc-web-gui
