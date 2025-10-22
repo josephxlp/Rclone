@@ -15,3 +15,5 @@ https://rclone.org/gui/
 rclone rcd --rc-web-gui
 
 https://rclone.org/commands/
+
+https://rclone.org/onedrive/ :: onedrive mounting
