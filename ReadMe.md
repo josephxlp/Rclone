@@ -12,3 +12,5 @@ mkdir ~/OneDrive
 rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive &
 
 rclone rcd --rc-web-gui
+
+https://rclone.org/commands/
