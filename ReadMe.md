@@ -11,6 +11,7 @@ mkdir ~/OneDrive
 - mount remote to local direcory 
 rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive &
 
+https://rclone.org/gui/
 rclone rcd --rc-web-gui
 
 https://rclone.org/commands/
