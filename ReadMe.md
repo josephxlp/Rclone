@@ -19,4 +19,5 @@ https://rclone.org/commands/
 https://rclone.org/onedrive/ :: onedrive mounting
 
 
+create directory and then mount
 rclone mount "OneDrive": $HOME/RcloneOneDrive --vfs-cache-mode full
