@@ -23,3 +23,5 @@ create directory and then mount
 
 
 rclone mount "OneDrive": $HOME/RcloneOneDrive --vfs-cache-mode full
+
+rclone mount "OneDriveRclone": $HOME/RcloneOneDrive --vfs-cache-mode full
