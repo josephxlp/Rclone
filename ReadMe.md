@@ -26,3 +26,9 @@ mkdir -p $HOME/RcloneOneDrive
 rclone mount "OneDrive": $HOME/RcloneOneDrive --vfs-cache-mode full
 
 rclone mount "OneDriveRclone": $HOME/RcloneOneDrive --vfs-cache-mode full
+
+Note: This command will occupy your terminal. If you want it to run in the background so you can keep using the terminal, add an & at the end: 
+
+rclone mount "OneDriveRclone": $HOME/RcloneOneDrive --vfs-cache-mode full &
+
+fusermount -u $HOME/RcloneOneDrive
