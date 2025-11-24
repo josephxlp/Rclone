@@ -38,3 +38,9 @@ Note: This command will occupy your terminal. If you want it to run in the backg
 rclone mount "OneDriveRclone": $HOME/RcloneOneDrive --vfs-cache-mode full &
 
 fusermount -u $HOME/RcloneOneDrive
+
+-------------------------------------
+
+tmux new-session -d -s onedrive 'rclone mount "OneDrive": $HOME/RcloneOneDrive --vfs-cache-mode full'
+tmux attach-session -t onedrive
+
