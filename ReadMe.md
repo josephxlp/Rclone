@@ -43,5 +43,6 @@ fusermount -u $HOME/RcloneOneDrive
 -------------------------------------
 
 tmux new-session -d -s onedrive 'rclone mount "OneDrive": $HOME/RcloneOneDrive --vfs-cache-mode full'
+>
 tmux attach-session -t onedrive
 
