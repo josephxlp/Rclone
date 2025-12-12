@@ -25,22 +25,24 @@ https://rclone.org/onedrive/ :: onedrive mounting
 create directory and then mount
 
 rclone listremotes
-
+-------------------------------------------------------------------------------------------
 mkdir -p $HOME/RcloneOneDrive
 
 rclone mount "OneDrive": $HOME/RcloneOneDrive --vfs-cache-mode full
+
 #can i run this with tmux so the terminal is available for other tasks?
-
+>
 rclone mount "OneDriveRclone": $HOME/RcloneOneDrive --vfs-cache-mode full
-
+>
 Note: This command will occupy your terminal. If you want it to run in the background so you can keep using the terminal, add an & at the end: 
-
+>
 rclone mount "OneDriveRclone": $HOME/RcloneOneDrive --vfs-cache-mode full &
-
+>
 fusermount -u $HOME/RcloneOneDrive
 
 -------------------------------------
 
 tmux new-session -d -s onedrive 'rclone mount "OneDrive": $HOME/RcloneOneDrive --vfs-cache-mode full'
+>
 tmux attach-session -t onedrive
 
