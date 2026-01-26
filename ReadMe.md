@@ -28,9 +28,13 @@ rclone listremotes
 -------------------------------------------------------------------------------------------
 mkdir -p $HOME/RcloneOneDrive
 
-
-WX1::
 -------------------------------------------------------------------------------------------
+
+
+WX1 :: OneDrive:
+rclone mount "OneDrive": $HOME/RcloneOneDrive --vfs-cache-mode full
+
+----------
   rclone mount "OneDrive": $HOME/RcloneOneDrive --vfs-cache-mode full
 
 #can i run this with tmux so the terminal is available for other tasks?
