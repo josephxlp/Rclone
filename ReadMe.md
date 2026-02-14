@@ -11,6 +11,7 @@ https://kb.uconn.edu/space/IKB/26050527301/Install+OneDrive+on+Linux
 
 - create local direcory
 mkdir ~/OneDrive
+
 - mount remote to local direcory 
 rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive &
 
@@ -25,13 +26,19 @@ https://rclone.org/onedrive/ :: onedrive mounting
 create directory and then mount
 
 rclone listremotes
--------------------------------------------------------------------------------------------
-mkdir -p $HOME/RcloneOneDrive
 
 
-WX1::
--------------------------------------------------------------------------------------------
+
+
+WX1:
+-----
+
+  mkdir -p $HOME/RcloneOneDrive
+  
   rclone mount "OneDrive": $HOME/RcloneOneDrive --vfs-cache-mode full
+
+
+
 
 #can i run this with tmux so the terminal is available for other tasks?
 >
